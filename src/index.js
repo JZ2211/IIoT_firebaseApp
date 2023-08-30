@@ -53,12 +53,7 @@ const loginEmailPassword = async () => {
   const loginEmail = txtEmail.value;
   const loginPassword = txtPassword.value;
 
-  // step 1: try doing this w/o error handling, and then add try/catch
-  //await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-  //const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-  //console.log(userCredential.user);
-
-  // step 2: add error handling
+  // include error handling
   try {
      const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
      console.log(userCredential.user);
