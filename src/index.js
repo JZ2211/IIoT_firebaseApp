@@ -32,6 +32,7 @@ import {
 
 import { getDatabase, ref, set, onValue, get, child, query, limitToLast, orderByChild, equalTo } from 'firebase/database';
 
+// !!!the firebase configuration needs to be modified for your project!!!
 const firebaseConfig = {
   apiKey: "yourapikey",
   authDomain: "your auth domain",
